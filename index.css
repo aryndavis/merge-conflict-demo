@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    background-color: #A0E7E5;
+    color: black;
+    font-family: 'Poppins';
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;  
+}
+
+li {
+    list-style: circle;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: auto;
+    position: relative;
+    font-weight: 425;
+}
+
+.mini-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icons{
+    padding-top: 40px;
+    text-align: center;
+}
+
+#rap {
+    background-color: rgba(255, 206, 206, 0.65);
+}
+
+#pop {
+    background-color: rgba(240, 222, 255, .65);
+}
+
+#electronic{
+    background-color: rgba(216, 255, 225, .65);
+}
+
+#alternative {
+    background-color: rgba(192, 197, 255, .65);
+}
+
+#country {
+    background-color: rgba(255, 244, 199, .65);
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 2px;
+    opacity: 0.85;
+}
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+.fa:hover {
+    opacity: 0.6;
+    animation: bounce 1s;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
