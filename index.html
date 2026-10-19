@@ -6,15 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>GOAT!</title>
 </head>
 <body>
     <div>
         <h1>Best Musicians of the 2020s!</h1> 
-        <script src="https://www.wpromotions.eu/confetti.min.js"></script>
-        <script>confetti.start()</script>
-        <script>setTimeout(function () { confetti.stop(); }, 3000)</script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.js"
+            integrity="sha384-bopE5cbMjKUprmGnIRk2UdvCnHImrRLCtNW2uR6oDYqO+o3XWJeuIrWWxDzeDgNW"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            // Rain confetti from the top of the page for 3 seconds.
+            var confettiEnd = Date.now() + 3000;
+            (function frame() {
+                confetti({
+                    particleCount: 3,
+                    angle: 270,
+                    spread: 90,
+                    startVelocity: 10,
+                    origin: { x: Math.random(), y: 0 },
+                    disableForReducedMotion: true
+                });
+                if (Date.now() < confettiEnd) requestAnimationFrame(frame);
+            })();
+        </script>
     </div>
     <div class="container">
         <div class="mini-container" id="rap">
