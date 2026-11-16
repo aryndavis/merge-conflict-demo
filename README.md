@@ -15,7 +15,7 @@ After this, students felt more comfortable using Git and resolving conflicts. We
 Looking back, I would have automated the demo instead of relying on live demo work. Live demos raise the potential for mistakes and errors that aren't related to the demo itself, and that makes the demo more stressful. This self-guided version works that way: the practice branches are prepared ahead of time, so every merge behaves the same way each time.
 
 - **Who it's for:** people who've used `git commit` and `git branch` but haven't run into a conflict yet
-- **Time:** about 30 minutes
+- **Time:** about 30 minutes on your own, or 40 minutes in class
 
 By the end, you'll be able to:
 
